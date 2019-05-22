@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{059E32FE-B4C6-4BB0-83A5-EF53284D802F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BekraHayrNesterCtfTools</RootNamespace>
+    <AssemblyName>BekraHayrNesterCtfTools</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>BekraHayrNesterCtfTools.Program</StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\BekraHayrNesterCtfTools\BekraHayrNesterCtfTools\bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing">
+      <HintPath>..\..\BekraHayrNesterCtfTools\BekraHayrNesterCtfTools\bin\Debug\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\..\BekraHayrNesterCtfTools\BekraHayrNesterCtfTools\bin\Debug\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aynıdgrbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aynıdgrbl.Designer.cs">
+      <DependentUpon>aynıdgrbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="base64decocc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="base64decocc.Designer.cs">
+      <DependentUpon>base64decocc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BekraCTFPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BekraCTFPanel.Designer.cs">
+      <DependentUpon>BekraCTFPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="binary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="binary.Designer.cs">
+      <DependentUpon>binary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cumledenwordlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cumledenwordlist.Designer.cs">
+      <DependentUpon>cumledenwordlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Md5Brutefforcewordlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Md5Brutefforcewordlist.Designer.cs">
+      <DependentUpon>Md5Brutefforcewordlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Post_or_Get.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Post_or_Get.Designer.cs">
+      <DependentUpon>Post_or_Get.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="qrkodeoku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qrkodeoku.Designer.cs">
+      <DependentUpon>qrkodeoku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rdphack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rdphack.Designer.cs">
+      <DependentUpon>rdphack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telnet.Designer.cs">
+      <DependentUpon>telnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tertsyaziyazma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tertsyaziyazma.Designer.cs">
+      <DependentUpon>tertsyaziyazma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Webloginbrute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Webloginbrute.Designer.cs">
+      <DependentUpon>Webloginbrute.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aynıdgrbl.resx">
+      <DependentUpon>aynıdgrbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="base64decocc.resx">
+      <DependentUpon>base64decocc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BekraCTFPanel.resx">
+      <DependentUpon>BekraCTFPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="binary.resx">
+      <DependentUpon>binary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cumledenwordlist.resx">
+      <DependentUpon>cumledenwordlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Md5Brutefforcewordlist.resx">
+      <DependentUpon>Md5Brutefforcewordlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Post_or_Get.resx">
+      <DependentUpon>Post_or_Get.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qrkodeoku.resx">
+      <DependentUpon>qrkodeoku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdphack.resx">
+      <DependentUpon>rdphack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telnet.resx">
+      <DependentUpon>telnet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tertsyaziyazma.resx">
+      <DependentUpon>tertsyaziyazma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Webloginbrute.resx">
+      <DependentUpon>Webloginbrute.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSTSCLib">
+      <Guid>{8C11EFA1-92C3-11D1-BC1E-00C04FA31489}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSTSCLib">
+      <Guid>{8C11EFA1-92C3-11D1-BC1E-00C04FA31489}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
